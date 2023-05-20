@@ -21,4 +21,5 @@ public class SodaInventoryDto {
     private OffsetDateTime lastModifiedDate;
     private UUID sodaId;
     private Integer quantityOnHand;
+    private String upc;
 }
