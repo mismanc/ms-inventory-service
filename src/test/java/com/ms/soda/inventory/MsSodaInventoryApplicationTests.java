@@ -1,10 +1,10 @@
-package com.msscbeer.inventory;
+package com.ms.soda.inventory;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsscBeerInventoryApplicationTests {
+class MsSodaInventoryApplicationTests {
 
     @Test
     void contextLoads() {
