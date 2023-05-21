@@ -12,9 +12,9 @@ import java.util.UUID;
 /**
  * Created by jt on 2019-06-07.
  */
+// @Component
 @Slf4j
 @RequiredArgsConstructor
-@Component
 public class SodaInventoryBootstrap implements CommandLineRunner {
     public static final String SODA_1_UPC = "0631234200036";
     public static final String SODA_2_UPC = "0631234300019";
