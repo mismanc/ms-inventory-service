@@ -15,4 +15,12 @@
     <name>ms-soda-inventory</name>
     <description>ms-soda-inventory</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
 </project>
