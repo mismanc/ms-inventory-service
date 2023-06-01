@@ -5,7 +5,6 @@ import com.ms.soda.inventory.repositories.SodaInventoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 import java.util.UUID;
 
@@ -15,7 +14,7 @@ import java.util.UUID;
 // @Component
 @Slf4j
 @RequiredArgsConstructor
-@Component
+// @Component
 public class SodaInventoryBootstrap implements CommandLineRunner {
     public static final String SODA_1_UPC = "0631234200036";
     public static final String SODA_2_UPC = "0631234300019";
