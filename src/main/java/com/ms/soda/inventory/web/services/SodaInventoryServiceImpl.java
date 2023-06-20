@@ -1,8 +1,8 @@
 package com.ms.soda.inventory.web.services;
 
-import com.ms.soda.inventory.web.mappers.SodaInventoryMapper;
-import com.ms.soda.inventory.web.model.SodaInventoryDto;
 import com.ms.soda.inventory.repositories.SodaInventoryRepository;
+import com.ms.soda.inventory.web.mappers.SodaInventoryMapper;
+import com.ms.soda.model.SodaInventoryDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

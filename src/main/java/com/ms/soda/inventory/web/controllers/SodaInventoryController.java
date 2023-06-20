@@ -1,7 +1,7 @@
 package com.ms.soda.inventory.web.controllers;
 
-import com.ms.soda.inventory.web.model.SodaInventoryDto;
 import com.ms.soda.inventory.web.services.SodaInventoryService;
+import com.ms.soda.model.SodaInventoryDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

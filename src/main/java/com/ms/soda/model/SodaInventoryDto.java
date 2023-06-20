@@ -1,4 +1,4 @@
-package com.ms.soda.inventory.web.model;
+package com.ms.soda.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

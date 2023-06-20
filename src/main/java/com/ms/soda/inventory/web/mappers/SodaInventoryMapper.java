@@ -1,7 +1,7 @@
 package com.ms.soda.inventory.web.mappers;
 
 import com.ms.soda.inventory.domain.SodaInventory;
-import com.ms.soda.inventory.web.model.SodaInventoryDto;
+import com.ms.soda.model.SodaInventoryDto;
 import org.mapstruct.Mapper;
 
 /**
