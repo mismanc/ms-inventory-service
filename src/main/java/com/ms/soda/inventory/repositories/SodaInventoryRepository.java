@@ -8,4 +8,6 @@ import java.util.UUID;
 
 public interface SodaInventoryRepository extends JpaRepository<SodaInventory, UUID> {
     List<SodaInventory> findAllBySodaId(UUID sodaId);
+
+    List<SodaInventory> findByUpc(String upc);
 }
