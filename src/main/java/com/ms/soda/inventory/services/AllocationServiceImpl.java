@@ -7,7 +7,6 @@ import com.ms.soda.model.SodaOrderLineDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -41,7 +40,6 @@ public class AllocationServiceImpl implements AllocationService {
         return totalOrdered.get() == totalAllocated.get();
     }
 
-    @Transactional
     public void allocateOrderLine(SodaOrderLineDto line) {
         List<SodaInventory> inventoryList = inventoryRepository.findByUpc(line.getUpc());
 
