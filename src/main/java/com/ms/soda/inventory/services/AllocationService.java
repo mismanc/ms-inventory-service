@@ -6,4 +6,5 @@ public interface AllocationService {
 
     Boolean allocateOrder(SodaOrderDto sodaOrderDto);
 
+    void deallocateOrder(SodaOrderDto sodaOrderDto);
 }
