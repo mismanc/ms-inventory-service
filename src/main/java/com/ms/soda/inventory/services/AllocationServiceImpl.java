@@ -42,7 +42,7 @@ public class AllocationServiceImpl implements AllocationService {
 
     @Override
     public void deallocateOrder(SodaOrderDto sodaOrderDto) {
-        sodaOrderDto.getSodaOrderLines().forEach(line->{
+        sodaOrderDto.getSodaOrderLines().forEach(line -> {
             SodaInventory inventory = SodaInventory.builder()
                     .sodaId(line.getSodaId())
                     .upc(line.getUpc())
@@ -70,6 +70,9 @@ public class AllocationServiceImpl implements AllocationService {
             } else if (inventory > 0) {
                 line.setQuantityAllocated(allocateQty + inventory);
                 inv.setQuantityOnHand(0);
+            }
+
+            if (inv.getQuantityOnHand() != null && inv.getQuantityOnHand() == 0) {
                 inventoryRepository.delete(inv);
             }
         });
