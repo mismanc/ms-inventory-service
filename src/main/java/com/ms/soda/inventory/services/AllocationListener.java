@@ -20,8 +20,7 @@ public class AllocationListener {
     @JmsListener(destination = JMSConfig.ALLOCATE_ORDER_QUEUE)
     public void listen(AllocateOrderRequest allocateOrderRequest) {
         AllocateOrderResult.AllocateOrderResultBuilder builder = AllocateOrderResult.builder();
-        builder.sodaOrderDto(allocateOrderRequest.getSodaOrderDto());
-
+        builder.sodaOrderDto(allocateOrderRequest.getSodaOrderDto()).allocationError(false);
         try {
             Boolean allocationResult = allocationService.allocateOrder(allocateOrderRequest.getSodaOrderDto());
             if (allocationResult) {
