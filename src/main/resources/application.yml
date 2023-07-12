@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: inventory-service
   artemis:
     password: simetraehcapa
     user: artemis
