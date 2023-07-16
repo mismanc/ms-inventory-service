@@ -27,6 +27,10 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  security:
+    user:
+      name: soda
+      password: inventory
 
 server:
   port: 8082
